@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+//this is program to calculate sum and prodect of digits in a given number
+
+int main()
+{
+    int num,sum,dig,pro,temp;
+    printf("Enter any number\n");
+    scanf("%d",&num);
+
+    temp=num;
+    sum=0;
+    dig=0;
+    pro=1;
+    while(temp!=0)
+    {
+     dig=temp%10;//here digits are separated from whole number
+     sum+=dig;//all digits get cube
+     pro*=dig;
+     temp=temp/10;
+    }
+    printf("sum of digits is %d\n",sum);
+    printf("product of digits is %d\n",pro);
+    return 0;
+
+}
