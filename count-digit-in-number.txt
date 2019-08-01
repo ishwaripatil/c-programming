@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+//this is program to count no of digit in given number
+int main()
+{
+    int num,temp,count;
+    printf("Enter any number\n");
+    scanf("%d",&num);
+
+    temp=num;
+    count=0;
+    while(temp!=0)
+    {
+     count++;
+     temp=temp/10;
+    }
+    printf("number of digit in given number %d\n",count);
+
+    return 0;
+
+}
