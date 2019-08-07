@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+//write a program if we have two numbers then find out numbers them .
+int main()
+{
+    int num1,num2,i;
+    printf("Enter first number\n");
+
+    scanf("%d",&num1);
+    printf("Enter second number\n");
+
+    scanf("%d",&num2);
+    for(i=num1;i<=num2;i++)
+    {
+        printf(" %d ",i);
+    }
+    return 0;
+}
