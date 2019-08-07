@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char name[]="ishwari";
+    char *ptr;
+    ptr=name;//store base address of string
+    while(*ptr!='\0')//this process carried out until last character
+    {
+      printf("%c",*ptr);
+      ptr++;
+    }
+    printf("\n");
+    return 0;
+}
