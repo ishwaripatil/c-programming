@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int x=0,y=0,dist,quad,count;
+    for(count=0,dist=0,quad=0;count<n;count++,dist+=10,quad++,quad%=4)
+
+    {
+        switch(quad)
+        {
+
+
+    case 0:
+        x=x+dist; break;
+    case 1:
+        y=y+dist; break;
+    case 2:
+        x=x-dist; break;
+    case 3:
+        y=y-dist; break;
+        }
+
+
+    }
+    printf("%d %d",x,y);
+    return 0;
+}
