@@ -1,0 +1,1 @@
+pass by value- in function calling if we don't assign the called function answer to any variable it won't update the answer so no effect will be shown on main function variable.
